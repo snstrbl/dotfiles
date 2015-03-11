@@ -1,0 +1,15 @@
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+alias ls='ls -F --color=auto'
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -ltr'
+alias lu='ls -ltur'
+
+alias ftail='tail -f'
+alias xml='xmllint --format'
+alias bfg='java -jar /home/strobel/bin/bfg-1.12.1.jar'
