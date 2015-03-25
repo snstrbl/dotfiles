@@ -1,0 +1,35 @@
+[color]
+ui = auto
+[color "branch"]
+current = yellow reverse
+local = yellow
+remote = green
+[color "diff"]
+whitespace = red reverse
+meta = yellow bold
+frag = magenta bold
+old = red bold
+new = green bold
+[color "status"]
+added = yellow
+changed = green
+untracked = cyan
+[core]
+whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+autocrlf = input
+[alias]
+st = status
+b = branch
+co = checkout
+ll = log --oneline --graph
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+unpushed = log --branches --not --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+undo = reset --hard HEAD~1
+[merge]
+tool = meld
+conflictstyle = diff3
+[http]
+sslVerify = false
+[user]
+	email = 
+	name = 
